@@ -1,0 +1,1 @@
+Exemple de communication entre 1 directive stateful et une directive stateless.
