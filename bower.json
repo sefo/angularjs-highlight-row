@@ -1,0 +1,15 @@
+{
+  "name": "highlight-table-row",
+  "description": "test",
+  "main": "app.js",
+  "authors": [
+    "seb"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "angular": "^1.5.6",
+    "bootstrap": "^3.3.6"
+  }
+}

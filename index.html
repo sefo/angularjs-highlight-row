@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <header>
+        <title>test</title>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <style>
+            .focus {
+                color: red;
+            }
+            .highlight {
+                background-color: red;
+                color: white;
+            }
+        </style>
+    </header>
+    <body ng-controller="TestController as test">
+        
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <th>Colonne 1</th>
+                    <th>Colonne 2</th>
+                </thead>
+                <tbody>
+                    <tr class="row-highlight" ng-repeat="donnee in test.donnees" highlight-row donnee="donnee" model="test.donnee.valeur">
+                        <td>{{donnee.donnee1}}</td>
+                        <td>{{donnee.donnee2}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <input type="text" value="test" class="focus" ng-model="test.donnee.valeur" suppr-focus>
+        </div>
+        
+        <script src="app.js"></script>
+        <script src="controller.js"></script>
+        <script src="highlight-row.js"></script>
+        <script src="suppr-focus.js"></script>
+    </body>
+</html>
